@@ -14,6 +14,7 @@ COPY config/server.xml /opt/ibm/wlp/usr/servers/defaultServer/
 
 RUN /opt/ibm/wlp/bin/installUtility install  --acceptLicense /opt/ibm/wlp/usr/servers/defaultServer/server.xml
 
+
 EXPOSE 8082
 
 CMD ["/opt/ibm/wlp/bin/server", "run", "defaultServer"]
